@@ -2733,7 +2733,7 @@ export class Function extends Component implements Link.Linkable {
       },
       include: [
         permission({
-          actions: ["lambda:InvokeFunction"],
+          actions: ["lambda:InvokeFunction", "lambda:InvokeFunctionUrl"],
           resources: [this.function.arn],
         }),
       ],
